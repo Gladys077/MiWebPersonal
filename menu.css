@@ -13,9 +13,11 @@ body{
 nav{
     background-color: #f89f05;
     height: 70px;
-    width: 100%;
+    width: 100vw;
     border-bottom: 4px solid rgb(3, 34, 85);
-    position: fixed
+    position: fixed;
+    z-index: 2;
+
 }
 
 .enlace {
@@ -30,9 +32,8 @@ h2{
 }
 nav ul{
     float: right;
-    margin-right: 30px;
+    margin-right: 40px;
     letter-spacing: .8px;
-
 }
 nav ul li{
     display: inline-block;
@@ -49,7 +50,7 @@ nav ul li a{
 
 }
 li a.active, li a:hover{
-    background-color: #009090;
+    background-color: rgb(3, 34, 85);
     transition: .2s;
     color: white;
 }
@@ -66,13 +67,7 @@ li a.active, li a:hover{
     display: none;
 }
 
-section{
-    background: url(img/005.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: calc(100vh - 70px);
-}
+
 
 
 
@@ -80,13 +75,14 @@ section{
     .checkbtn{
         display: block;
     }
+
     nav ul{
         position: fixed;
-        width: 40%;
+        width: 40vw;
         height: 95vh;
-        background: rgba(43, 61, 79, 0.9);
+        background: rgba(3, 34, 85, 0.95);
         top: 70px;
-        right: -100%;
+        right: -100vw;
         text-align: center;
         transition: all .7s;
         margin-right: 0px;
@@ -103,18 +99,20 @@ section{
     }
     nav ul li a{
         cursor: pointer;
-        font-size: 20px;
+        font-size: 1.3em;
         min-height: 100%;
         display: grid;
         align-content: center;
+        color: #fff;
     }
     ul li:hover{
-        background: rgba(0, 120, 139, 0.8);
-        border-left: 3px ridge white;
+        background: rgb(248, 159, 5);
+        color: rgb(3, 34, 85);
+        font-size: 1.2em;
     }
     li a:hover, li a:active{
         background: none;
-        color: rgb(255, 149, 0); 
+
     }
     #check:checked ~ ul{
         right: 0;
@@ -126,7 +124,7 @@ section{
         }
         nav ul{
             position: fixed;
-            width: 100%;
+            width: 100vw;
         }
         nav ul li{
             letter-spacing: 3px;
