@@ -17,7 +17,6 @@ nav{
     border-bottom: 4px solid rgb(3, 34, 85);
     position: fixed;
     z-index: 2;
-
 }
 
 .enlace {
@@ -95,7 +94,7 @@ li a.active, li a:hover{
         letter-spacing: 1.5px;
         min-height: 18%;
         align-self: center;
-
+        padding: 0;
     }
     nav ul li a{
         cursor: pointer;
@@ -104,6 +103,9 @@ li a.active, li a:hover{
         display: grid;
         align-content: center;
         color: #fff;
+        padding: 0;
+        text-align: center
+
     }
     ul li:hover{
         background: rgb(248, 159, 5);
@@ -125,9 +127,14 @@ li a.active, li a:hover{
         nav ul{
             position: fixed;
             width: 100vw;
+            margin-right: 0px;
         }
         nav ul li{
             letter-spacing: 3px;
-
+            text-align: center;
+            margin: 0;
+        }
+        nav ul li a{
+            padding: 0;
         }
 }
