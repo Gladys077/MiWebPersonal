@@ -1,5 +1,21 @@
 @import url("menu.css");
-@import url('https://fonts.googleapis.com/css2?family=Griffy&family=Roboto:wght@300;700&display=swap');
+
+@font-face {
+    font-family: 'Griffy';
+    src: url('fonts/Griffy/Griffy-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url('fonts/Roboto/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cookie';
+    src: url('fonts/Cookie/Cookie-Regular.ttf') format('truetype');
+}
 
 * {
     padding: 0;
@@ -86,6 +102,7 @@ h2.developer {
     color: rgb(58, 2, 75);
     margin: 0em 0 .6em ;
     letter-spacing: 0.02em;
+    padding-bottom: .2em
 }
 
 .text {
@@ -109,7 +126,7 @@ h2.developer {
 
 #portfolio {
     width: 100%;
-    /* height: 100vh; */
+    min-height: 100vh;
     
     background: linear-gradient(180deg, #8193f6 0%, #7556f1 50%, #522bb6 100%);
 
@@ -142,16 +159,16 @@ article span {
     padding: .3em;
 
 }
-article span h3 {
+span h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 1.6em;
     font-variant: small-caps;
     color: white;
     text-align: center;
-    margin-bottom: 0.25em;
+    /* margin-bottom: 0.25em; */
     display: inline-block;
-
+    padding: .5em
 }
 article span p {
     color: white;
@@ -166,36 +183,45 @@ article iframe {
     margin-bottom: 2em
 }
 
+/* Herramientas */
 #skills {
-    min-width: 100vw;
+    width: 100vw;
     height: 88vh;
-    background: radial-gradient(circle, rgb(247, 214, 161) 0%, rgb(245, 238, 227) 100%);
-    padding: 5em;
+    background: linear-gradient(0deg, #6378f1 0%,#e4def1 100%);
+    padding-top: 75px;
     text-align: center;
 }
 
 #skills h1 {
-    width: 100%;
     color: black;
     font-family: 'Griffy';
     font-size: 3.6em;
-    font-weight: bold;
+    font-weight: 400;
     letter-spacing: 0.05em;
-    margin-top: .1em
+    padding-top: .5em;
 }
 
 .caja-skill {
-    width: 100%;
-    display: flex;
+    max-width: 98vw;
+    max-height: 60vh;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2em;
     justify-content: space-evenly;
-    align-content: center;
-    padding: 3em
+    align-items: center;
+    padding: 1em;
+}
+.caja-skill div {
+    width: 100%;
+    max-height: 90vh;
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 .caja-skill img {
-    width: 100%;
-    height: 14em;
-    
+    max-width: 100%;
+    height: auto;
+    max-height: 40vh;
 }
 
 
@@ -267,11 +293,27 @@ footer {
     .about img {
         display: none
     }
+    article iframe {
+        width: 80vw;
+        height: 50vh;
+    }
+    .skills {
+        width: 100vw
+    }
 }
 @media (max-width: 500px){
     .title {
         font-size: 2.1em;
         text-align: left;
         margin-bottom: .8em
+    }
+    #about{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+        align-items: center;
+    }
+    #portfolio {
+        padding-top: 30px;
     }
 }
