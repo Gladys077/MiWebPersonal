@@ -186,7 +186,7 @@ article iframe {
 /* Herramientas */
 #skills {
     width: 100vw;
-    height: 88vh;
+    height: auto;
     background: linear-gradient(0deg, #6378f1 0%,#e4def1 100%);
     padding-top: 75px;
     text-align: center;
@@ -198,16 +198,16 @@ article iframe {
     font-size: 3.6em;
     font-weight: 400;
     letter-spacing: 0.05em;
-    padding-top: .5em;
+    padding-bottom: 20px;
 }
 
 .caja-skill {
-    max-width: 98vw;
-    max-height: 60vh;
+    max-width: 100vw;
+    max-height: auto;
     display: grid;
     grid-auto-flow: column;
-    gap: 2em;
-    justify-content: space-evenly;
+    gap: 4em;
+    justify-content: center;
     align-items: center;
     padding: 1em;
 }
@@ -232,27 +232,21 @@ footer {
     font-size: 0.9em;
     padding: 1em;
     color: white;
-    text-align: center;
-    display: flex;
+    display: grid;
     justify-content: space-between;
     align-items: center;
     grid-template-columns: 2fr 1fr;
 
-   .Whatsapp{
-        display: grid;
-        justify-content: space-between;
-        align-items: center;
-    }
     .Whatsapp svg{
         width: 1em;
         height: 1em;
-        margin-right: .7em
     }
 
     .Whatsapp {
         font-size: 1.5em;
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
+        gap: .7em;
         color: white;
     }
 }
@@ -299,6 +293,19 @@ footer {
     }
     .skills {
         width: 100vw
+    }
+    footer {
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        text-align: center;
+        justify-content: center;
+        padding:10px;
+    }
+    .whatsapp{
+        grid-row: 1;
+        justify-self: center;
+        margin-bottom: 10px;
     }
 }
 @media (max-width: 500px){
