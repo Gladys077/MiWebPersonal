@@ -229,26 +229,26 @@ footer {
     width: 100%;
     background: rgb(3, 34, 85);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 0.9em;
     padding: 1em;
     color: white;
-    display: grid;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-template-columns: 2fr 1fr;
 
-    .Whatsapp svg{
-        width: 1em;
-        height: 1em;
-    }
-
-    .Whatsapp {
-        font-size: 1.5em;
+    .whatsapp {
+        font-size: 1.2em;
         display: flex;
         justify-content: end;
         gap: .7em;
         color: white;
     }
+
+    svg{
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+    
 }
 
 
@@ -295,18 +295,18 @@ footer {
         width: 100vw
     }
     footer {
-        width: 100vw;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        text-align: center;
-        justify-content: center;
-        padding:10px;
+        display: flex;
+        flex-direction: column; /* Alinea los elementos en columnas */
+        align-items: center; /* Centra horizontalmente */
+        text-align: center; /* Alinea el texto al centro */
     }
-    .whatsapp{
-        grid-row: 1;
-        justify-self: center;
-        margin-bottom: 10px;
+
+    .whatsapp {
+        margin-bottom: 10px; /* Agrega espacio entre los elementos */
+
     }
+
+    
 }
 @media (max-width: 500px){
     .title {
@@ -323,4 +323,5 @@ footer {
     #portfolio {
         padding-top: 30px;
     }
+
 }
