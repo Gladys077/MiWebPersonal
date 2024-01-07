@@ -22,6 +22,8 @@ nav{
     position: absolute;
     padding: 0px 40px;
     line-height: 70px; /*para que quede centrado*/
+    font-family: Griffy;
+    letter-spacing: .5em;
 }
 h2{
     font-size: 40px;
@@ -124,7 +126,7 @@ li a.active, li a:hover{
             display: block;
         }
         nav {
-            width:
+            width: 100%
         }
         nav ul{
             position: fixed;

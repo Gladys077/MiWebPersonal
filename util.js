@@ -1,24 +1,37 @@
 import { Videos } from './articulos.js';
 
 export const utils = {
-    leerJson: async function(archivo = './videos.json'){
-        try {
-            await fetch(archivo)
-            .then(response=>response.json())
+    cargado: false,
 
-            .then(data=>{
-                const dat = data.videos;
-                dat.forEach(element => {
-                    const d = new Videos(element.titulo, element.descripcion, element.video);
-                    d.agregarAlFront();
-                });
-            });
+    leerJson: async function (archivo = './videos.json') {
+        try {
+            if (!this.cargado) {
+                await fetch(archivo)
+                    .then(response => response.json())
+
+                    .then(data => {
+                        const dat = data.videos;
+                        dat.forEach(element => {
+                            const d = new Videos(element.titulo, element.descripcion, element.video);
+                            d.agregarAlFront();
+                        });
+                        this.cargado = true;
+                    });
+            }
         }
         catch (e) {
-            alert('error al leer el json' + e);
+            const errorMessage = 'Lo sentimos, ha ocurrido un problema al cargar la información.';
+            const errorElement = document.createElement('div');
+            errorElement.classList.add('mensajeError');
+            errorElement.textContent = errorMessage;
+        
+            const container = document.querySelector('.container');
+            container.innerHTML = ''; // Limpiamos el contenido existente
+            container.appendChild(errorElement);
+            console.error('Error al leer el JSON:', e);
         }
         finally {
-            
+
         }
     }
 }

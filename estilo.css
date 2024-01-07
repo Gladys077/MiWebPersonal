@@ -125,7 +125,7 @@ h2.developer {
 /* Portfolio */
 
 #portfolio {
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     
     background: linear-gradient(180deg, #8193f6 0%, #7556f1 50%, #522bb6 100%);
@@ -153,6 +153,11 @@ h2.developer {
     overflow: auto;
     /* flex-wrap: wrap; */
 }
+.mensajeError {
+    border: 3px double black;
+    background-color: grey;
+    color: black;
+}
 
 article span {
     height: 100px;
@@ -179,8 +184,10 @@ article span p {
 article iframe {
     width: 80vw;
     height: 72vh;
-    display: block;
-    margin-bottom: 2em
+    display: grid;
+    justify-items: center;
+    margin-bottom: 2em;
+
 }
 
 /* Herramientas */
@@ -225,17 +232,23 @@ article iframe {
 }
 
 
-footer {
-    width: 100%;
+footer { 
+    width: 100vw;
     background: rgb(3, 34, 85);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 1em;
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-areas: 'copy whatsapp';
     justify-content: space-between;
     align-items: center;
 
+    .copy{
+        grid-area: copy;
+    }
+
     .whatsapp {
+        grid-area: whatsapp;
         font-size: 1.2em;
         display: flex;
         justify-content: end;
@@ -287,6 +300,11 @@ footer {
     .about img {
         display: none
     }
+
+    /*portfolio*/
+    .container{
+        width: 100vw;
+    }
     article iframe {
         width: 80vw;
         height: 50vh;
@@ -295,10 +313,12 @@ footer {
         width: 100vw
     }
     footer {
-        display: flex;
-        flex-direction: column; /* Alinea los elementos en columnas */
-        align-items: center; /* Centra horizontalmente */
-        text-align: center; /* Alinea el texto al centro */
+        grid-template-areas:
+            'whatsapp'
+            'copy';
+        grid-template-columns: 1fr;
+        text-align: center;
+        place-items: center;
     }
 
     .whatsapp {

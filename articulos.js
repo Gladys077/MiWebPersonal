@@ -15,7 +15,7 @@ export class Videos {
         return ` 
             <article class="articulo">
                 <span><h3>${this.titulo}</h3>
-                    <p${this.descripcion}</p>
+                    <p>${this.descripcion}</p>
                 </span>
                 <iframe src="${this.src}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </video>
             </article>
