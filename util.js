@@ -20,7 +20,7 @@ export const utils = {
             }
         }
         catch (e) {
-            const errorMessage = 'Lo sentimos, ha ocurrido un problema al cargar la información.';
+            const errorMessage = 'Lo sentimos, ha ocurrido un problema al cargar la información...';
             const errorElement = document.createElement('div');
             errorElement.classList.add('mensajeError');
             errorElement.textContent = errorMessage;

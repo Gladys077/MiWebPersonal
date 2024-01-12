@@ -1,9 +1,9 @@
 {
     "videos":[
         {
-            "titulo": "Web Conferencia",
-            "descripcion": "(Realizada con HTML y CSS)",
-            "video": "https://www.youtube.com/embed/ZOs66_hGTho?si=kNm2RJITXDJ3kNCh"
+            "titulo": "App de Notas",
+            "descripcion": "Esta app te permite crear notas con títulos y descripción, seleccionar colores de las mismas. Podrás editarlas, exportarlas e importarlas.",
+            "video": "https://www.youtube.com/embed/agI_bTP1kvI?si=0dYXV2uKO4dGzU-V"
         },
         {
             "titulo": "Calculadora con historial",
@@ -12,13 +12,8 @@
         },
         {
             "titulo": "Juego Simple de Adivinanza",
-            "descripcion": "(Realizada con HTML, CSS y JS)",
+            "descripcion": "Un juego donde tienes que adivinar qué número, del 1 al 10, saldrá. Celebrará tus aciertos",
             "video": "https://www.youtube.com/embed/OM5MG6p6Ayw?si=uJ2T-7CxHDhtFRXp"
-        },
-        {
-            "titulo": "App de Notas",
-            "descripcion": "(Realizada con HTML, CSS y JS)",
-            "video": "https://www.youtube.com/embed/agI_bTP1kvI?si=0dYXV2uKO4dGzU-V"
         }
     ]
 }
