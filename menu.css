@@ -93,7 +93,7 @@ li a.active, li a:hover{
         line-height: 60px; /*espacio entre elementos*/
         border-bottom: 2px solid #fff;
         letter-spacing: 1.5px;
-        min-height: 21%;
+        min-height: 20.5%;
         align-self: center;
         padding: 0;
     }
@@ -105,7 +105,7 @@ li a.active, li a:hover{
         align-content: center;
         color: #fff;
         padding: 0;
-        text-align: center
+        text-align: center;
 
     }
     ul li:hover{
