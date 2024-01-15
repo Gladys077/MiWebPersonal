@@ -163,7 +163,7 @@ h2.developer {
 
 }
 
-.mensajeError {
+/* .mensajeError {
     border: 3px double black;
     background-color: rgb(52, 49, 49);
     padding: 1em;
@@ -172,7 +172,7 @@ h2.developer {
     color: white;
     margin-top: 4em;
     border-radius: 1.5em;
-}
+} */
 
 article span {
     height: 100px;
@@ -211,6 +211,102 @@ article {
     display: grid;
     place-items: center;
 }
+
+/*Cartel de ERROR al CARGAR */
+.card {
+    position: relative;
+    background: #131b33;
+    width: 50%;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.card span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #f46b02);
+    animation: animate-1 2s linear infinite;
+    z-index: 1;
+}
+
+@keyframes animate-1{
+    0%   { 
+        transform: translateX(-100%);
+    }
+    100% {  
+        transform: translateX(100%);
+    }
+}
+
+.card span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #f46b02);
+    animation: animate-2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate-2{
+    0%   { 
+        transform: translateY(-100%) 
+    }
+    100% {  
+        transform: translateY(100%) 
+    }
+}
+
+.card span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #f46b02);
+    animation: animate-3 2s linear infinite;
+}
+
+@keyframes animate-3{
+    0%   { 
+        transform: translateX(100%) 
+    }
+    100% {  
+        transform: translateX(-100%) 
+    }
+}
+
+.card span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #f46b02);
+    animation: animate-4 2s linear infinite;
+}
+
+@keyframes animate-4{
+    0%   { 
+        transform: translateY(100%) 
+    }
+    100% {  
+        transform: translateY(-100%) 
+    }
+}
+
 
 /* Herramientas */
 #skills {

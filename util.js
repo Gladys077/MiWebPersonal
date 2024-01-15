@@ -22,8 +22,23 @@ export const utils = {
         catch (e) {
             const errorMessage = 'Lo sentimos, ha ocurrido un problema al cargar la información...';
             const errorElement = document.createElement('div');
-            errorElement.classList.add('mensajeError');
-            errorElement.textContent = errorMessage;
+            errorElement.classList.add('card');
+
+            //Crear elementos span y p
+            const errorContent = document.createElement('p');
+            errorContent.textContent = errorMessage;
+
+            //Añadir los elementos al contenedor
+            errorElement.appendChild(errorContent);
+
+            //Crear y agregar los spans
+            for (let i = 1; i <= 4; i++) {
+                const span = document.createElement('span');
+                span.classList.add(`animate-${1}`);
+                errorElement.appendChild(span);
+            }
+
+            //errorElement.textContent = errorMessage;
         
             const container = document.querySelector('.container');
             container.innerHTML = ''; // Limpiamos el contenido existente
