@@ -166,7 +166,6 @@ h2.developer {
 article span {
     height: 100px;
     padding: .3em;
-
 }
 
 span h3 {
@@ -177,29 +176,23 @@ span h3 {
     color: white;
     text-align: center;
     /* margin-bottom: 0.25em; */
-    display: inline-block;
-    padding: .5em
+    /* display: inline-block; */
+    /* padding: .5em */
 }
 
 article span p {
     color: white;
     font-size: 1.1em;
     font-style: italic;
-    /* display: inline-block; */
-
 }
 
 article iframe {
     width: 80vw;
     height: 72vh;
-    margin-top: .5em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 2em
+}
 
-}
-article {
-    display: grid;
-    place-items: center;
-}
 
 /*Cartel de ERROR al CARGAR */
 .card {
@@ -387,7 +380,6 @@ footer {
         font-size: 1.4em;
         background-color: rgba(7, 26, 58, 0.3);
         bottom: 22vh;
-
     }
 
     /* Acerca de mi */
