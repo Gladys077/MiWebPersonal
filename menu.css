@@ -18,12 +18,12 @@ nav{
     z-index: 2;
 }
 
-.enlace {
+.logo {
     position: absolute;
     padding: 0px 40px;
     line-height: 70px; /*para que quede centrado*/
     font-family: Griffy;
-    letter-spacing: .5em;
+    letter-spacing: .2em;
 }
 h2{
     font-size: 40px;
@@ -48,12 +48,27 @@ nav ul li a{
     border-radius: 3px;
     text-transform: uppercase;
 
+    transition: all .3s ease;
+    position: relative;
 }
-li a.active, li a:hover{
-    background-color: rgb(3, 34, 85);
-    transition: .2s;
-    color: white;
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    transition: .5s;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #141f5f, #a05c04);
+    bottom: 0.5em;
+    left: 0;
+    right: 0;
 }
+
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
 .checkbtn{
     font-size: 40px;
     color: rgb(3, 34, 85);
@@ -66,9 +81,6 @@ li a.active, li a:hover{
 #check{
     display: none;
 }
-
-
-
 
 
 @media (max-width: 850px){
@@ -106,17 +118,13 @@ li a.active, li a:hover{
         color: #fff;
         padding: 0;
         text-align: center;
-
     }
     ul li:hover{
         background: rgb(248, 159, 5);
         color: rgb(3, 34, 85);
         font-size: 1.2em;
     }
-    li a:hover, li a:active{
-        background: none;
-
-    }
+    
     #check:checked ~ ul{
         right: 0;
     }
@@ -132,7 +140,7 @@ li a.active, li a:hover{
             position: fixed;
             min-width: 100%;
             width: 100vw;
-            /* margin-right: 20px; */
+            /* margin-right: 20px; */ 
         }
         nav ul li{
             letter-spacing: 3px;
