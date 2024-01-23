@@ -161,7 +161,7 @@ h2.developer {
 .articulo {
     width: 50%;
     height: auto;
-    border: 3px solid #131b33;
+    border: 3px ridge #131b33;
     border-radius: 20px;
     background:#4d67fb;
     background: radial-gradient(circle, rgba(241, 237, 152, 1) 0%, rgba(251, 186, 81, 1) 100%);
@@ -194,7 +194,14 @@ h2.developer {
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
-    color: #1f0b52
+    color: #1f0b52;
+    border-bottom:2px ridge #1f0b52;
+    background: #f29248;
+    box-shadow: -5px -5px 5px 5px 10px #eb9720;
+    border-radius: 15px;
+    margin-bottom: .5em;
+    width: auto;
+    height: 31px;
 }
 
 .articulo p {
@@ -206,7 +213,7 @@ h2.developer {
 
 .articulo iframe {
     /* display: block; */
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     border: none;
     border-radius: 10px;
@@ -475,8 +482,8 @@ footer {
         align-items: center;
     }
 
-    #portfolio {
+    /* #portfolio {
         padding-top: 30px;
-    }
+    } */
 
 }

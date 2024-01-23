@@ -7,12 +7,12 @@
         },
         {
             "titulo": "Calculadora con historial",
-            "descripcion": "(Realizada con HTML, CSS y JS)",
+            "descripcion": "Realizada con HTML, CSS y JS",
             "video": "https://www.youtube.com/embed/gO_5vyIO5T0?si=NwjqZSLTRijREtwC"
         },
         {
-            "titulo": "Juego Simple de Adivinanza",
-            "descripcion": "Un juego donde tienes que adivinar qué número, del 1 al 10, saldrá. Celebrará tus aciertos",
+            "titulo": "Juego de Adivinanza",
+            "descripcion": "Un juego simple, en el que tienes que adivinar qué número, del 1 al 10, saldrá. Celebrará tus aciertos",
             "video": "https://www.youtube.com/embed/OM5MG6p6Ayw?si=uJ2T-7CxHDhtFRXp"
         }
     ]
