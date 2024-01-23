@@ -22,7 +22,7 @@ export const utils = {
         catch (e) {
             const errorMessage = 'Lo sentimos, ha ocurrido un problema al cargar la información...';
             const errorElement = document.createElement('div');
-            errorElement.classList.add('card');
+            errorElement.classList.add('cardError');
 
             //Crear elementos span y p
             const errorContent = document.createElement('p');
