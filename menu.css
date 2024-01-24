@@ -7,6 +7,9 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+
+
+    scroll-behavior: smooth;
 }
 nav{
     background-color: #f89f05;
@@ -57,8 +60,9 @@ nav ul li a::before{
     height: 3px;
     width: 0;
     transition: .5s;
-    border-radius: 10px;
-    background: linear-gradient(90deg, #141f5f, #a05c04);
+    /* border-radius: 10px; */
+    background: linear-gradient(90deg, #141f5f, #f38d08);
+    background: -moz-linear-gradient(90deg, #141f5f, #f38d08);
     bottom: 0.5em;
     left: 0;
     right: 0;

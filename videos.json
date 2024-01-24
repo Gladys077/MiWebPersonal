@@ -2,7 +2,8 @@
     "videos":[
         {
             "titulo": "App de Notas",
-            "descripcion": "Esta app te permite crear notas con títulos y descripción, seleccionar colores de las mismas. Podrás editarlas, exportarlas e importarlas.",
+            "descripcion": "Esta app te permite crear notas 
+            con títulos y descripción, seleccionar colores de las mismas. Podrás editarlas, exportarlas e importarlas.",
             "video": "https://www.youtube.com/embed/agI_bTP1kvI?si=0dYXV2uKO4dGzU-V"
         },
         {

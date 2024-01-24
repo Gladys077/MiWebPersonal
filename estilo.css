@@ -6,11 +6,6 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'Roboto-bold';
     src: url('fonts/Roboto/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
 }
@@ -135,8 +130,8 @@ h2.developer {
     width: 100vw;
     min-height: 100vh;
 
-    background: linear-gradient(180deg, #8193f6 0%, #7556f1 50%, #522bb6 100%);
-
+    /* background: linear-gradient(180deg, #97acef 0%, #446bea 50%, #8f66f7 100%); */
+    background: radial-gradient(rgb(150, 149, 149), rgb(2, 30, 129) 70%);
     filter: opacity(90%);
     text-align: center;
     padding-top: 75px;
@@ -170,13 +165,6 @@ h2.developer {
     border-left: 2 px solid #1f0b52;
     box-shadow: -15px 15px 10px #1f0b52;
     overflow: hidden;
-
-    /* display: grid;
-    gap: 1em;
-    grid-auto-rows: 12rem;
-    grid-template-rows: repeat(auto-fill, minmax(5em, 1fr)); */
-
-    /* align-content: center; */
 
     display: flex;
     flex-direction: column;
@@ -222,23 +210,27 @@ h2.developer {
 
 
 /*Cartel de ERROR al CARGAR */
-.card {
+.cardError {
     position: relative;
     background: #131b33;
-    width: 50%;
+    color: white;
+    width: 70%;
     height: 100px;
     overflow: hidden;
     border-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: .5em;
+    margin-top: 1em
 }
-.card p{
-    position: absolute;
+.cardError p{
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%; 
     color: white;
 }
 
-.card span:nth-child(1) {
+.cardError span:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0;
@@ -246,7 +238,7 @@ h2.developer {
     height: 3px;
     background: linear-gradient(to right, transparent, #f46b02);
     animation: animate-1 2s linear infinite;
-    z-index: 1;
+    z-index: 3;
 }
 
 @keyframes animate-1{
@@ -258,7 +250,7 @@ h2.developer {
     }
 }
 
-.card span:nth-child(2) {
+.cardError span:nth-child(2) {
     position: absolute;
     top: 0;
     right: 0;
@@ -278,10 +270,10 @@ h2.developer {
     }
 }
 
-.card span:nth-child(3) {
+.cardError span:nth-child(3) {
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 3px;
     background: linear-gradient(to left, transparent, #f46b02);
@@ -297,7 +289,7 @@ h2.developer {
     }
 }
 
-.card span:nth-child(4) {
+.cardError span:nth-child(4) {
     position: absolute;
     top: 0;
     left: 0;
