@@ -21,12 +21,24 @@ nav{
     z-index: 2;
 }
 
-.logo {
+.logo-container {
     position: absolute;
     padding: 0px 40px;
     line-height: 70px; /*para que quede centrado*/
-    font-family: Griffy;
-    letter-spacing: .2em;
+
+ 
+
+    
+}
+.gato{
+    /* display:inline-block; */
+    width: auto;
+    height: 65px;
+    background-size: cover;
+    transform: scaleX(1);
+    filter: drop-shadow(-5px 5px 10px rgba(252, 247, 247, 0.931));
+    margin-left:.2em;
+    padding-left: 30px;
 }
 h2{
     font-size: 40px;
@@ -61,8 +73,8 @@ nav ul li a::before{
     width: 0;
     transition: .5s;
     /* border-radius: 10px; */
-    background: linear-gradient(90deg, #141f5f, #f38d08);
-    background: -moz-linear-gradient(90deg, #141f5f, #f38d08);
+    background: linear-gradient(90deg, #0c143dae, #ffffff8f);
+    background: linear-gradient(90deg, #0c143dae, #ffffff8f);
     bottom: 0.5em;
     left: 0;
     right: 0;
@@ -87,7 +99,7 @@ nav ul li a:hover::before {
 }
 
 
-@media (max-width: 850px){
+@media (max-width: 900px){
     .checkbtn{
         display: block;
     }

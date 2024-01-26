@@ -43,12 +43,14 @@ body {
     background-position: center center;
 }
 
-h1.nombre {
-    font-size: 3.6rem;
-    width: 100vw;
+.nombre{
     position: absolute;
     bottom: 28vh;
-    color: #fff;
+    width: 40%;
+    left: 50%;
+    transform: -50%;
+    margin-left: -19%; /* La mitad del ancho */
+    filter: invert(100%) drop-shadow(-5px 5px 10px rgba(12, 104, 241, 0.999));
 }
 
 h2.developer {
@@ -103,7 +105,8 @@ h2.developer {
     font-weight: 600;
     color: rgb(58, 2, 75);
     margin: 0em 0 .6em;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.1em;
+    text-shadow: -5px 5px 5px rgba(250, 250, 250, 0.5);
     padding-bottom: .2em
 }
 
@@ -131,7 +134,7 @@ h2.developer {
     min-height: 100vh;
 
     /* background: linear-gradient(180deg, #97acef 0%, #446bea 50%, #8f66f7 100%); */
-    background: radial-gradient(rgb(150, 149, 149), rgb(2, 30, 129) 70%);
+    background: radial-gradient(rgb(187, 202, 236), rgb(104, 135, 238), rgb(67, 58, 225) 70%);
     filter: opacity(90%);
     text-align: center;
     padding-top: 75px;
@@ -142,7 +145,8 @@ h2.developer {
     font-family: 'Griffy';
     font-size: 3.6em;
     font-weight: 400;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.1em;
+    text-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
     padding-top: .5em;
 }
 
@@ -163,7 +167,7 @@ h2.developer {
     padding: 2em;
     margin: 1em;
     border-left: 2 px solid #1f0b52;
-    box-shadow: -15px 15px 10px #1f0b52;
+    box-shadow: -15px 15px 10px #1f0b528a;
     overflow: hidden;
 
     display: flex;
@@ -195,14 +199,12 @@ h2.developer {
 .articulo p {
     font-size: 1.1em;
     font-style: italic;
-    /* height: 90px */
     margin-top: .5em;
 }
 
 .articulo iframe {
-    /* display: block; */
-    /* width: 100%; */
-    height: 100%;
+    width: 320px;
+    height: 140px;
     border: none;
     border-radius: 10px;
     margin-top: 1em
@@ -222,7 +224,7 @@ h2.developer {
     text-align: center;
     align-items: center;
     padding: .5em;
-    margin-top: 1em
+    margin-top: 1em;
 }
 .cardError p{
     top: 50%;
@@ -313,7 +315,7 @@ h2.developer {
 #skills {
     width: 100vw;
     height: auto;
-    background: linear-gradient(0deg, #6378f1 0%, #e4def1 100%);
+    background: linear-gradient(0deg, #7441e2 0%, #bb9ff7 100%);
     padding-top: 75px;
     padding-bottom: 55px;
     text-align: center;
@@ -324,7 +326,8 @@ h2.developer {
     font-family: 'Griffy';
     font-size: 3.6em;
     font-weight: 400;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
+    text-shadow: -5px 5px 5px rgba(250, 250, 250, 0.5);
     padding-bottom: 20px;
 }
 
