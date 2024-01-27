@@ -33,18 +33,15 @@ nav{
 .gato{
     /* display:inline-block; */
     width: auto;
-    height: 65px;
-    background-size: cover;
-    transform: scaleX(1);
+    height: 60px;
+    /* background-size: cover; */
+    /* transform: scaleX(1); */
     /* filter: drop-shadow(-5px 5px 10px rgba(252, 247, 247, 0.931)); */
-    margin-left:.2em;
+    /* margin-left:.2em; */
     padding-left: 30px;
+    padding-top: 3px;
 }
-h2{
-    font-size: 40px;
-    color: rgb(3, 34, 85);
-    
-}
+
 nav ul{
     float: right;
     margin-right: 40px;
