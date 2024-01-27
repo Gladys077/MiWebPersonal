@@ -34,8 +34,6 @@ body {
     height: 100vh;
     font-family: Griffy;
     letter-spacing: 0.2rem;
-    
-    text-align: center;
 
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(img/005.jpg);
     background-repeat: no-repeat;
@@ -59,8 +57,13 @@ h2.developer {
     position: absolute;
     bottom: 20vh;
     text-align: center;
-
-}
+    text-shadow: 
+        -1px -1px 3px rgba(0, 0, 0, 0.8), /* Sombra superior izquierda clara */
+        1px -1px 3px rgba(0, 0, 0, 0.8), /* Sombra superior derecha clara */
+        -1px 1px 3px rgba(0, 0, 0, 0.8), /* Sombra inferior izquierda clara */
+        1px 1px 3px rgba(0, 0, 0, 0.8), /* Sombra inferior derecha clara */
+        0px 0px 10px rgba(0, 0, 0, 0.8); /* Sombra principal oscura */
+    }
 
 .socials {
     background-color: rgba(0, 0, 0, 0.4);

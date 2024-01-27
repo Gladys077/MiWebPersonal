@@ -36,7 +36,7 @@ nav{
     height: 65px;
     background-size: cover;
     transform: scaleX(1);
-    filter: drop-shadow(-5px 5px 10px rgba(252, 247, 247, 0.931));
+    /* filter: drop-shadow(-5px 5px 10px rgba(252, 247, 247, 0.931)); */
     margin-left:.2em;
     padding-left: 30px;
 }
